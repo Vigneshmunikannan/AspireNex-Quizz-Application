@@ -1,0 +1,382 @@
+/* AuthForm.css */
+
+.auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;    
+}
+
+.auth-form {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-form input {
+  width: 94%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-button {
+  margin-top: 10px;
+  background-color: #28a745 !important;
+}
+
+.toggle-button:hover {
+  background-color: #218838 !important;
+}
+
+/* message */
+
+/* MessageComponent.css */
+
+.message-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  z-index: 10000; /* Set a high z-index to ensure it is above other layers */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.success {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.error {
+  background-color: #fde2e2;
+  color: #b91c1c;
+}
+
+
+/* header */
+.header {
+  background-color: #f0f0f0; /* Add your desired background color */
+  padding: 10px 80px; /* Add padding as needed */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__list--right {
+  margin-left: auto; /* Pushes the right-side items to the end */
+}
+
+.nav__item {
+  margin-right: 20px; /* Adjust spacing between items */
+}
+
+.nav__item:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav__button {
+  border: none;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+/* Error page */
+.error-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  text-align: center;
+}
+
+.error-text {
+  margin-bottom: 20px;
+}
+
+.error-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error-button:hover {
+  background-color: #0056b3;
+}
+
+
+.create-quiz-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.question-block {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.options-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-group {
+  margin-bottom: 10px;
+}
+
+.correct-answer-block {
+  margin-top: 10px;
+}
+
+.add-question-btn, .submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.add-question-btn:hover, .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.quiz-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.quiz-list {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.attempt-btn, .delete-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.attempt-btn:hover, .delete-btn:hover {
+  background-color: #0056b3;
+}
+.quiz-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.take-quiz-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-block {
+  margin-bottom: 20px;
+}
+
+.options-block {
+  margin-top: 10px;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-buttons button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.quiz-result-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.score {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.answers-list {
+  margin-top: 20px;
+}
+
+.question-result {
+  margin-bottom: 20px;
+}
+
+.error-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.error-button:hover {
+  background-color: #c82333;
+}
