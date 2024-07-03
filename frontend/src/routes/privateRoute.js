@@ -7,7 +7,7 @@ import CreateQuiz from "../PrivateComponents/CreateQuiz"
 import QuizList from "../PrivateComponents/QuizList"
 import TakeQuiz from "../PrivateComponents/TakeQuiz"
 const PrivateRoute = () => {
-  const { isValidTokenAvailable } = useAuth();
+  const { isValidTokenAvailable } = useAuth()
   return (
     <>
       {isValidTokenAvailable() && <Header />}
